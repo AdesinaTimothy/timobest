@@ -69,7 +69,6 @@ export default function Home() {
             <h3 className="text-yellow-500 text-4xl md:text-5xl font-[500]">
               Work Experience 💪
             </h3>
-            <p className=" text-sm text-[#A3A3A3]"></p>
           </div>
 
           <div>
@@ -77,7 +76,7 @@ export default function Home() {
               <AccordionItem value="item-1">
                 <AccordionTrigger className="text-white">
                   <div className="w-full items-center justify-between flex flex-row">
-                    <div className="flex flex-row items-center justify-start gap-3">
+                    <div className="flex flex-row items-center justify-start gap-2">
                       <div>
                         <Image
                           src="/images/rnlinked.svg"
@@ -122,7 +121,7 @@ export default function Home() {
               <AccordionItem value="item-1">
                 <AccordionTrigger className="text-white">
                   <div className="w-full items-center justify-between flex flex-row">
-                    <div className="flex flex-row items-center justify-start gap-3">
+                    <div className="flex flex-row items-center justify-start gap-2">
                       <div>
                         <Image
                           src="/images/rnlinked.svg"
@@ -134,9 +133,11 @@ export default function Home() {
                       </div>
                       <div>
                         <h3 className="text-white text-lg font-[600]">
-                          RnLINKED
+                          DiaPal
                         </h3>
-                        <p className="text-sm font-[300]">Design Engineer</p>
+                        <p className="text-sm font-[300]">
+                          Founding Design Engineer
+                        </p>
                       </div>
                     </div>
 
@@ -167,7 +168,7 @@ export default function Home() {
               <AccordionItem value="item-1">
                 <AccordionTrigger className="text-white">
                   <div className="w-full items-center justify-between flex flex-row">
-                    <div className="flex flex-row items-center justify-start gap-3">
+                    <div className="flex flex-row items-center justify-start gap-2">
                       <div>
                         <Image
                           src="/images/timobest.jpg"
@@ -209,7 +210,595 @@ export default function Home() {
           </div>
         </section>
 
-        <div></div>
+        {/* Skills Section */}
+        <section id="skills" className="w-full h-auto mt-6">
+          <div>
+            <div className="w-full flex flex-col gap-3">
+              <h3 className="text-yellow-500 text-4xl md:text-5xl font-[500]">
+                Skills 🛠️
+              </h3>
+            </div>
+
+            <div className="h-auto flex flex-col flex-wrap mt-4">
+              <h3 className="text-white mt-2 text-2xl">Frontend Development</h3>
+
+              <div className="flex flex-wrap  mt-1 gap-2 max-w-4xl">
+                <div
+                  className="flex flex-wrap items-center justify-between gap-3  bg-white rounded-sm px-2 py-1 shadow-sm 
+                hover:bg-yellow-500 hover:shadow-md transition-colors duration-100 cursor-pointer group"
+                >
+                  {/* Label */}
+                  <p className="text-gray-900 text-sm font-medium group-hover:text-white">
+                    HTML
+                  </p>
+
+                  {/* Icon */}
+                  <div className="flex items-center justify-center w-6 h-6 rounded-full">
+                    <Image
+                      src="/images/icons/svg/HTML5.svg"
+                      alt="HTML5 Logo"
+                      width={20}
+                      height={20}
+                      className="object-contain"
+                    />
+                  </div>
+                </div>
+                <div
+                  className="flex flex-wrap items-center justify-between gap-3  bg-white rounded-sm px-2 py-1 shadow-sm 
+                hover:bg-yellow-500 hover:shadow-md transition-colors duration-100 cursor-pointer group"
+                >
+                  {/* Label */}
+                  <p className="text-gray-900 text-sm font-medium group-hover:text-white">
+                    CSS3
+                  </p>
+
+                  {/* Icon */}
+                  <div className="flex items-center justify-center w-6 h-6 rounded-full">
+                    <Image
+                      src="/images/icons/svg/CSS3.svg"
+                      alt="HTML5 Logo"
+                      width={20}
+                      height={20}
+                      className="object-contain"
+                    />
+                  </div>
+                </div>
+                <div
+                  className="flex flex-wrap items-center justify-between gap-3  bg-white rounded-sm px-2 py-1 shadow-sm 
+                hover:bg-yellow-500 hover:shadow-md transition-colors duration-100 cursor-pointer group"
+                >
+                  {/* Label */}
+                  <p className="text-gray-900 text-sm font-medium group-hover:text-white">
+                    Tailwind CSS
+                  </p>
+
+                  {/* Icon */}
+                  <div className="flex items-center justify-center w-6 h-6 rounded-full">
+                    <Image
+                      src="/images/icons/svg/Tailwind-CSS.svg"
+                      alt="HTML5 Logo"
+                      width={20}
+                      height={20}
+                      className="object-contain"
+                    />
+                  </div>
+                </div>
+                <div
+                  className="flex flex-wrap items-center justify-between gap-3  bg-white rounded-sm px-2 py-1 shadow-sm 
+                hover:bg-yellow-500 hover:shadow-md transition-colors duration-100 cursor-pointer group"
+                >
+                  {/* Label */}
+                  <p className="text-gray-900 text-sm font-medium group-hover:text-white">
+                    JavaScript
+                  </p>
+
+                  {/* Icon */}
+                  <div className="flex items-center justify-center w-6 h-6 rounded-full">
+                    <Image
+                      src="/images/icons/svg/JavaScript.svg"
+                      alt="HTML5 Logo"
+                      width={20}
+                      height={20}
+                      className="object-contain"
+                    />
+                  </div>
+                </div>
+                <div
+                  className="flex flex-wrap items-center justify-between gap-3  bg-white rounded-sm px-2 py-1 shadow-sm 
+                hover:bg-yellow-500 hover:shadow-md transition-colors duration-100 cursor-pointer group"
+                >
+                  {/* Label */}
+                  <p className="text-gray-900 text-sm font-medium group-hover:text-white">
+                    TypeScript
+                  </p>
+
+                  {/* Icon */}
+                  <div className="flex items-center justify-center w-6 h-6 rounded-full">
+                    <Image
+                      src="/images/icons/svg/TypeScript.svg"
+                      alt="HTML5 Logo"
+                      width={20}
+                      height={20}
+                      className="object-contain"
+                    />
+                  </div>
+                </div>
+                <div
+                  className="flex flex-wrap items-center justify-between gap-3  bg-white rounded-sm px-2 py-1 shadow-sm 
+                hover:bg-yellow-500 hover:shadow-md transition-colors duration-100 cursor-pointer group"
+                >
+                  {/* Label */}
+                  <p className="text-gray-900 text-sm font-medium group-hover:text-white">
+                    React
+                  </p>
+
+                  {/* Icon */}
+                  <div className="flex items-center justify-center w-6 h-6 rounded-full">
+                    <Image
+                      src="/images/icons/svg/React.svg"
+                      alt="HTML5 Logo"
+                      width={20}
+                      height={20}
+                      className="object-contain"
+                    />
+                  </div>
+                </div>
+                <div
+                  className="flex flex-wrap items-center justify-between gap-3  bg-white rounded-sm px-2 py-1 shadow-sm 
+                hover:bg-yellow-500 hover:shadow-md transition-colors duration-100 cursor-pointer group"
+                >
+                  {/* Label */}
+                  <p className="text-gray-900 text-sm font-medium group-hover:text-white">
+                    NextJs
+                  </p>
+
+                  {/* Icon */}
+                  <div className="flex items-center justify-center w-6 h-6 rounded-full">
+                    <Image
+                      src="/images/icons/svg/Next.js.svg"
+                      alt="HTML5 Logo"
+                      width={20}
+                      height={20}
+                      className="object-contain"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Backend Develpment */}
+            <div className="h-auto flex flex-col flex-wrap mt-4">
+              <h3 className="text-white mt-2 text-2xl">Backend Development</h3>
+
+              <div className="flex flex-wrap  mt-1 gap-2 max-w-4xl">
+                <div
+                  className="flex flex-wrap items-center justify-between gap-3  bg-white rounded-sm px-2 py-1 shadow-sm 
+                hover:bg-yellow-500 hover:shadow-md transition-colors duration-100 cursor-pointer group"
+                >
+                  {/* Label */}
+                  <p className="text-gray-900 text-sm font-medium group-hover:text-white">
+                    Node.js
+                  </p>
+
+                  {/* Icon */}
+                  <div className="flex items-center justify-center w-6 h-6 rounded-full">
+                    <Image
+                      src="/images/icons/svg/Node.js.svg"
+                      alt="HTML5 Logo"
+                      width={20}
+                      height={20}
+                      className="object-contain"
+                    />
+                  </div>
+                </div>
+                <div
+                  className="flex flex-wrap items-center justify-between gap-3  bg-white rounded-sm px-2 py-1 shadow-sm 
+                hover:bg-yellow-500 hover:shadow-md transition-colors duration-100 cursor-pointer group"
+                >
+                  {/* Label */}
+                  <p className="text-gray-900 text-sm font-medium group-hover:text-white">
+                    Express
+                  </p>
+
+                  {/* Icon */}
+                  <div className="flex items-center justify-center w-6 h-6 rounded-full">
+                    <Image
+                      src="/images/icons/svg/Express.svg"
+                      alt="HTML5 Logo"
+                      width={20}
+                      height={20}
+                      className="object-contain"
+                    />
+                  </div>
+                </div>
+                <div
+                  className="flex flex-wrap items-center justify-between gap-3  bg-white rounded-sm px-2 py-1 shadow-sm 
+                hover:bg-yellow-500 hover:shadow-md transition-colors duration-100 cursor-pointer group"
+                >
+                  {/* Label */}
+                  <p className="text-gray-900 text-sm font-medium group-hover:text-white">
+                    Rest APIs
+                  </p>
+
+                  {/* Icon */}
+                  <div className="flex items-center justify-center w-6 h-6 rounded-full">
+                    <Image
+                      src="/images/icons/svg/Tailwind-CSS.svg"
+                      alt="HTML5 Logo"
+                      width={20}
+                      height={20}
+                      className="object-contain"
+                    />
+                  </div>
+                </div>
+                <div
+                  className="flex flex-wrap items-center justify-between gap-3  bg-white rounded-sm px-2 py-1 shadow-sm 
+                hover:bg-yellow-500 hover:shadow-md transition-colors duration-100 cursor-pointer group"
+                >
+                  {/* Label */}
+                  <p className="text-gray-900 text-sm font-medium group-hover:text-white">
+                    GraphQl
+                  </p>
+
+                  {/* Icon */}
+                  <div className="flex items-center justify-center w-6 h-6 rounded-full">
+                    <Image
+                      src="/images/icons/svg/GraphQL.svg"
+                      alt="HTML5 Logo"
+                      width={20}
+                      height={20}
+                      className="object-contain"
+                    />
+                  </div>
+                </div>
+                <div
+                  className="flex flex-wrap items-center justify-between gap-3  bg-white rounded-sm px-2 py-1 shadow-sm 
+                hover:bg-yellow-500 hover:shadow-md transition-colors duration-100 cursor-pointer group"
+                >
+                  {/* Label */}
+                  <p className="text-gray-900 text-sm font-medium group-hover:text-white">
+                    MongoDB
+                  </p>
+
+                  {/* Icon */}
+                  <div className="flex items-center justify-center w-6 h-6 rounded-full">
+                    <Image
+                      src="/images/icons/svg/MongoDB.svg"
+                      alt="HTML5 Logo"
+                      width={20}
+                      height={20}
+                      className="object-contain"
+                    />
+                  </div>
+                </div>
+                <div
+                  className="flex flex-wrap items-center justify-between gap-3  bg-white rounded-sm px-2 py-1 shadow-sm 
+                hover:bg-yellow-500 hover:shadow-md transition-colors duration-100 cursor-pointer group"
+                >
+                  {/* Label */}
+                  <p className="text-gray-900 text-sm font-medium group-hover:text-white">
+                    PostgresSQL
+                  </p>
+
+                  {/* Icon */}
+                  <div className="flex items-center justify-center w-6 h-6 rounded-full">
+                    <Image
+                      src="/images/icons/svg/PostgresSQL.svg"
+                      alt="HTML5 Logo"
+                      width={20}
+                      height={20}
+                      className="object-contain"
+                    />
+                  </div>
+                </div>
+                <div
+                  className="flex flex-wrap items-center justify-between gap-3  bg-white rounded-sm px-2 py-1 shadow-sm 
+                hover:bg-yellow-500 hover:shadow-md transition-colors duration-100 cursor-pointer group"
+                >
+                  {/* Label */}
+                  <p className="text-gray-900 text-sm font-medium group-hover:text-white">
+                    Clerk
+                  </p>
+
+                  {/* Icon */}
+                  <div className="flex items-center justify-center w-6 h-6 rounded-full">
+                    <Image
+                      src="/images/icons/svg/Clerk.svg"
+                      alt="HTML5 Logo"
+                      width={20}
+                      height={20}
+                      className="object-contain"
+                    />
+                  </div>
+                </div>
+                <div
+                  className="flex flex-wrap items-center justify-between gap-3  bg-white rounded-sm px-2 py-1 shadow-sm 
+                hover:bg-yellow-500 hover:shadow-md transition-colors duration-100 cursor-pointer group"
+                >
+                  {/* Label */}
+                  <p className="text-gray-900 text-sm font-medium group-hover:text-white">
+                    SupaBase
+                  </p>
+
+                  {/* Icon */}
+                  <div className="flex items-center justify-center w-6 h-6 rounded-full">
+                    <Image
+                      src="/images/icons/svg/SupaBase.svg"
+                      alt="HTML5 Logo"
+                      width={20}
+                      height={20}
+                      className="object-contain"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Mobile Development */}
+            <div className="h-auto flex flex-col flex-wrap mt-4">
+              <h3 className="text-white mt-1 text-2xl">Mobile Development</h3>
+
+              <div className="flex flex-wrap  mt-2 gap-2 max-w-4xl">
+                <div
+                  className="flex flex-wrap items-center justify-between gap-3  bg-white rounded-sm px-2 py-1 shadow-sm 
+                hover:bg-yellow-500 hover:shadow-md transition-colors duration-100 cursor-pointer group"
+                >
+                  {/* Label */}
+                  <p className="text-gray-900 text-sm font-medium group-hover:text-white">
+                    React Native
+                  </p>
+
+                  {/* Icon */}
+                  <div className="flex items-center justify-center w-6 h-6 rounded-full">
+                    <Image
+                      src="/images/icons/svg/React.svg"
+                      alt="HTML5 Logo"
+                      width={20}
+                      height={20}
+                      className="object-contain"
+                    />
+                  </div>
+                </div>
+                <div
+                  className="flex flex-wrap items-center justify-between gap-3  bg-white rounded-sm px-2 py-1 shadow-sm 
+                hover:bg-yellow-500 hover:shadow-md transition-colors duration-100 cursor-pointer group"
+                >
+                  {/* Label */}
+                  <p className="text-gray-900 text-sm font-medium group-hover:text-white">
+                    Expo
+                  </p>
+
+                  {/* Icon */}
+                  <div className="flex items-center justify-center w-6 h-6 rounded-full">
+                    <Image
+                      src="/images/icons/svg/Expo.svg"
+                      alt="HTML5 Logo"
+                      width={20}
+                      height={20}
+                      className="object-contain"
+                    />
+                  </div>
+                </div>
+                <div
+                  className="flex flex-wrap items-center justify-between gap-3  bg-white rounded-sm px-2 py-1 shadow-sm 
+                hover:bg-yellow-500 hover:shadow-md transition-colors duration-100 cursor-pointer group"
+                >
+                  {/* Label */}
+                  <p className="text-gray-900 text-sm font-medium group-hover:text-white">
+                    SQLite
+                  </p>
+
+                  {/* Icon */}
+                  <div className="flex items-center justify-center w-6 h-6 rounded-full">
+                    <Image
+                      src="/images/icons/svg/SQLite.svg"
+                      alt="HTML5 Logo"
+                      width={20}
+                      height={20}
+                      className="object-contain"
+                    />
+                  </div>
+                </div>
+                <div
+                  className="flex flex-wrap items-center justify-between gap-3  bg-white rounded-sm px-2 py-1 shadow-sm 
+                hover:bg-yellow-500 hover:shadow-md transition-colors duration-100 cursor-pointer group"
+                >
+                  {/* Label */}
+                  <p className="text-gray-900 text-sm font-medium group-hover:text-white">
+                    MMKV
+                  </p>
+
+                  {/* Icon */}
+                  <div className="flex items-center justify-center w-6 h-6 rounded-full">
+                    <Image
+                      src="/images/icons/svg/GraphQL.svg"
+                      alt="HTML5 Logo"
+                      width={20}
+                      height={20}
+                      className="object-contain"
+                    />
+                  </div>
+                </div>
+                <div
+                  className="flex flex-wrap items-center justify-between gap-3  bg-white rounded-sm px-2 py-1 shadow-sm 
+                hover:bg-yellow-500 hover:shadow-md transition-colors duration-100 cursor-pointer group"
+                >
+                  {/* Label */}
+                  <p className="text-gray-900 text-sm font-medium group-hover:text-white">
+                    NativeWind
+                  </p>
+
+                  {/* Icon */}
+                  <div className="flex items-center justify-center w-6 h-6 rounded-full">
+                    <Image
+                      src="/images/icons/svg/MongoDB.svg"
+                      alt="HTML5 Logo"
+                      width={20}
+                      height={20}
+                      className="object-contain"
+                    />
+                  </div>
+                </div>
+                <div
+                  className="flex flex-wrap items-center justify-between gap-3  bg-white rounded-sm px-2 py-1 shadow-sm 
+                hover:bg-yellow-500 hover:shadow-md transition-colors duration-100 cursor-pointer group"
+                >
+                  {/* Label */}
+                  <p className="text-gray-900 text-sm font-medium group-hover:text-white">
+                    Reanimated
+                  </p>
+
+                  {/* Icon */}
+                  <div className="flex items-center justify-center w-6 h-6 rounded-full">
+                    <Image
+                      src="/images/icons/svg/logo-hero.svg"
+                      alt="HTML5 Logo"
+                      width={20}
+                      height={20}
+                      className="object-contain"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Mobile Development */}
+            <div className="h-auto flex flex-col flex-wrap mt-4">
+              <h3 className="text-white mt-1 text-2xl">Design</h3>
+
+              <div className="flex flex-wrap  mt-2 gap-2 max-w-4xl">
+                <div
+                  className="flex flex-wrap items-center justify-between gap-3  bg-white rounded-sm px-2 py-1 shadow-sm 
+                hover:bg-yellow-500 hover:shadow-md transition-colors duration-100 cursor-pointer group"
+                >
+                  {/* Label */}
+                  <p className="text-gray-900 text-sm font-medium group-hover:text-white">
+                    Figma
+                  </p>
+
+                  {/* Icon */}
+                  <div className="flex items-center justify-center w-6 h-6 rounded-full">
+                    <Image
+                      src="/images/icons/svg/Figma.svg"
+                      alt="HTML5 Logo"
+                      width={20}
+                      height={20}
+                      className="object-contain"
+                    />
+                  </div>
+                </div>
+                <div
+                  className="flex flex-wrap items-center justify-between gap-3  bg-white rounded-sm px-2 py-1 shadow-sm 
+                hover:bg-yellow-500 hover:shadow-md transition-colors duration-100 cursor-pointer group"
+                >
+                  {/* Label */}
+                  <p className="text-gray-900 text-sm font-medium group-hover:text-white">
+                    Illustrator
+                  </p>
+
+                  {/* Icon */}
+                  <div className="flex items-center justify-center w-6 h-6 rounded-full">
+                    <Image
+                      src="/images/icons/svg/Adobe-Illustrator.svg"
+                      alt="HTML5 Logo"
+                      width={20}
+                      height={20}
+                      className="object-contain"
+                    />
+                  </div>
+                </div>
+                <div
+                  className="flex flex-wrap items-center justify-between gap-3  bg-white rounded-sm px-2 py-1 shadow-sm 
+                hover:bg-yellow-500 hover:shadow-md transition-colors duration-100 cursor-pointer group"
+                >
+                  {/* Label */}
+                  <p className="text-gray-900 text-sm font-medium group-hover:text-white">
+                    Photoshop
+                  </p>
+
+                  {/* Icon */}
+                  <div className="flex items-center justify-center w-6 h-6 rounded-full">
+                    <Image
+                      src="/images/icons/svg/Adobe-Photoshop.svg"
+                      alt="HTML5 Logo"
+                      width={20}
+                      height={20}
+                      className="object-contain"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Mobile Development */}
+            <div className="h-auto flex flex-col flex-wrap mt-4">
+              <h3 className="text-white mt-1 text-2xl">Packages/Library</h3>
+
+              <div className="flex flex-wrap  mt-2 gap-2 max-w-4xl">
+                <div
+                  className="flex flex-wrap items-center justify-between gap-3  bg-white rounded-sm px-2 py-1 shadow-sm 
+                hover:bg-yellow-500 hover:shadow-md transition-colors duration-100 cursor-pointer group"
+                >
+                  {/* Label */}
+                  <p className="text-gray-900 text-sm font-medium group-hover:text-white">
+                    Zustand
+                  </p>
+
+                  {/* Icon */}
+                  <div className="flex items-center justify-center w-6 h-6 rounded-full">
+                    <Image
+                      src="/images/icons/svg/Figma.svg"
+                      alt="HTML5 Logo"
+                      width={20}
+                      height={20}
+                      className="object-contain"
+                    />
+                  </div>
+                </div>
+                <div
+                  className="flex flex-wrap items-center justify-between gap-3  bg-white rounded-sm px-2 py-1 shadow-sm 
+                hover:bg-yellow-500 hover:shadow-md transition-colors duration-100 cursor-pointer group"
+                >
+                  {/* Label */}
+                  <p className="text-gray-900 text-sm font-medium group-hover:text-white">
+                    React-Toastify
+                  </p>
+
+                  {/* Icon */}
+                  <div className="flex items-center justify-center w-6 h-6 rounded-full">
+                    <Image
+                      src="/images/icons/svg/Adobe-Illustrator.svg"
+                      alt="HTML5 Logo"
+                      width={20}
+                      height={20}
+                      className="object-contain"
+                    />
+                  </div>
+                </div>
+                <div
+                  className="flex flex-wrap items-center justify-between gap-3  bg-white rounded-sm px-2 py-1 shadow-sm 
+                hover:bg-yellow-500 hover:shadow-md transition-colors duration-100 cursor-pointer group"
+                >
+                  {/* Label */}
+                  <p className="text-gray-900 text-sm font-medium group-hover:text-white">
+                    Shadcn UI
+                  </p>
+
+                  {/* Icon */}
+                  <div className="flex items-center justify-center w-6 h-6 rounded-full">
+                    <Image
+                      src="/images/icons/svg/Adobe-Photoshop.svg"
+                      alt="HTML5 Logo"
+                      width={20}
+                      height={20}
+                      className="object-contain"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
     </div>
   );
