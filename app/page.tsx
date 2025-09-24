@@ -65,10 +65,12 @@ export default function Home() {
                 improve lives and shape a better future.
               </p>
 
-              <div className="flex flex-row gap-6">
-                <button className="bg-yellow-500 hover:bg-yellow-600 text-black  py-2 px-6 rounded-md shadow-md transition-colors duration-300">
-                  Reach Out
-                </button>
+              <div className="flex flex-col md:flex-row gap-6">
+                <Link href="/about">
+                  <button className="bg-yellow-500 hover:bg-yellow-600 text-black  py-2 px-6 rounded-md shadow-md transition-colors duration-300">
+                    Learn more about me
+                  </button>
+                </Link>
                 <button className="bg-white hover:bg-yellow-600 text-black  py-2 px-6 rounded-md shadow-md transition-colors duration-300">
                   Download Resume
                 </button>
