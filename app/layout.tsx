@@ -64,7 +64,7 @@ export default function RootLayout({
       lang="en"
       className={`${pally.variable} ${ubuntu.variable} ${geistSans.variable} ${geistMono.variable}`}
     >
-      <body className="antialiased min-h-screen bg-black mx-auto max-w-5xl py-12 sm:py-24 px-6">
+      <body className="antialiased min-h-screen bg-black mx-auto max-w-5xl  py-10 px-6">
         {children}
       </body>
     </html>

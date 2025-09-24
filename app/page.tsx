@@ -9,16 +9,65 @@ import ProjectCard from "@/components/ui/ProjectCard";
 import Link from "next/link";
 import Footer from "@/components/ui/Footer";
 import { Separator } from "@/components/ui/separator";
+import {
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuIndicator,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+  NavigationMenuViewport,
+} from "@/components/ui/navigation-menu";
 
 export default function Home() {
   return (
-    <div className="bg-black flex flex-col w-full items-center justify-center">
+    <div className="bg-black flex flex-col w-full items-center justify-center px-2">
       {/* Header Section  */}
+
+      <section
+        id="menu"
+        className="sticky top-2 z-50 w-full h-auto flex flex-row items-center rounded-md justify-between bg-transparent backdrop-blur-md px-5"
+      >
+        <div>
+          <Link href="/">
+            <h5 className="text-yellow-500 text-lg font-semibold">TimoBest</h5>
+          </Link>
+        </div>
+        <div>
+          <NavigationMenu className="">
+            <NavigationMenuList className="gap-3">
+              <NavigationMenuItem>
+                <Link href="/" passHref>
+                  <p className="px-4 py-2 text-base font-semibold text-yellow-500 rounded-md cursor-pointer transition-all duration-300 hover:bg-yellow-500 hover:text-black">
+                    Home
+                  </p>
+                </Link>
+              </NavigationMenuItem>
+              <NavigationMenuItem>
+                <Link href="/project" passHref>
+                  <p className="px-4 py-2 text-base font-semibold text-yellow-500 rounded-md cursor-pointer transition-all duration-300 hover:bg-yellow-500 hover:text-black">
+                    Projects
+                  </p>
+                </Link>
+              </NavigationMenuItem>
+              <NavigationMenuItem>
+                <Link href="/about" passHref>
+                  <p className="px-4 py-2 text-base font-semibold text-yellow-500 rounded-md cursor-pointer transition-all duration-300 hover:bg-yellow-500 hover:text-black">
+                    About
+                  </p>
+                </Link>
+              </NavigationMenuItem>
+            </NavigationMenuList>
+          </NavigationMenu>
+        </div>
+      </section>
+
       <div className="w-full h-auto ">
-        <section className="w-full h-auto" id="hero">
+        <section className="w-full h-auto" id="hero ">
           <div
             id="hero-div"
-            className="w-full justify-between flex h-auto items-center mb-2 pt-5"
+            className="w-full justify-between flex h-auto items-center mt-30 mb-2 pt-5"
           >
             <div className="gap-4 w-full">
               <h1 className="text-white text-5xl md:text-8xl font-[700]">

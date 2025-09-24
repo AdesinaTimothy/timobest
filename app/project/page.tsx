@@ -1,10 +1,59 @@
 import Footer from "@/components/ui/Footer";
 import ProjectCard from "@/components/ui/ProjectCard";
 import { Separator } from "@/components/ui/separator";
+import {
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuIndicator,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+  NavigationMenuViewport,
+} from "@/components/ui/navigation-menu";
+import Link from "next/link";
 
 export default function ProjectPage() {
   return (
     <div className="bg-black w-full ">
+      <section
+        id="menu"
+        className="sticky top-2 z-50 w-full h-auto flex flex-row items-center rounded-md justify-between bg-transparent backdrop-blur-md px-5"
+      >
+        <div>
+          <Link href="/">
+            <h5 className="text-yellow-500 text-lg font-semibold">TimoBest</h5>
+          </Link>
+        </div>
+        <div>
+          <NavigationMenu className="">
+            <NavigationMenuList className="gap-3">
+              <NavigationMenuItem>
+                <Link href="/" passHref>
+                  <p className="px-4 py-2 text-base font-semibold text-yellow-500 rounded-md cursor-pointer transition-all duration-300 hover:bg-yellow-500 hover:text-black">
+                    Home
+                  </p>
+                </Link>
+              </NavigationMenuItem>
+              <NavigationMenuItem>
+                <Link href="/project" passHref>
+                  <p className="px-4 py-2 text-base font-semibold text-yellow-500 rounded-md cursor-pointer transition-all duration-300 hover:bg-yellow-500 hover:text-black">
+                    Projects
+                  </p>
+                </Link>
+              </NavigationMenuItem>
+              <NavigationMenuItem>
+                <Link href="/about" passHref>
+                  <p className="px-4 py-2 text-base font-semibold text-yellow-500 rounded-md cursor-pointer transition-all duration-300 hover:bg-yellow-500 hover:text-black">
+                    About
+                  </p>
+                </Link>
+              </NavigationMenuItem>
+            </NavigationMenuList>
+          </NavigationMenu>
+        </div>
+      </section>
+
       <section className="w-full h-auto" id="hero">
         <div
           id="hero-div"

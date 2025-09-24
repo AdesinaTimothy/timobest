@@ -1,9 +1,58 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
+import {
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuIndicator,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+  NavigationMenuViewport,
+} from "@/components/ui/navigation-menu";
 
 const page = () => {
   return (
     <div className="w-full h-auto flex flex-col">
+      <section
+        id="menu"
+        className="sticky top-2 z-50 w-full h-auto flex flex-row items-center rounded-md justify-between bg-transparent backdrop-blur-md px-5"
+      >
+        <div>
+          <Link href="/">
+            <h5 className="text-yellow-500 text-lg font-semibold">TimoBest</h5>
+          </Link>
+        </div>
+        <div>
+          <NavigationMenu className="">
+            <NavigationMenuList className="gap-3">
+              <NavigationMenuItem>
+                <Link href="/" passHref>
+                  <p className="px-4 py-2 text-base font-semibold text-yellow-500 rounded-md cursor-pointer transition-all duration-300 hover:bg-yellow-500 hover:text-black">
+                    Home
+                  </p>
+                </Link>
+              </NavigationMenuItem>
+              <NavigationMenuItem>
+                <Link href="/" passHref>
+                  <p className="px-4 py-2 text-base font-semibold text-yellow-500 rounded-md cursor-pointer transition-all duration-300 hover:bg-yellow-500 hover:text-black">
+                    Projects
+                  </p>
+                </Link>
+              </NavigationMenuItem>
+              <NavigationMenuItem>
+                <Link href="/" passHref>
+                  <p className="px-4 py-2 text-base font-semibold text-yellow-500 rounded-md cursor-pointer transition-all duration-300 hover:bg-yellow-500 hover:text-black">
+                    About
+                  </p>
+                </Link>
+              </NavigationMenuItem>
+            </NavigationMenuList>
+          </NavigationMenu>
+        </div>
+      </section>
+
       <section className="mt-20 py-3" id="about">
         <div className="w-full flex flex-col  gap-10 md:gap-20 items-center justify-between">
           <div className="w-[400px]    md:w-[450] ">
@@ -67,8 +116,8 @@ const page = () => {
             <Image
               src="/images/icons/svg/trophy1.png"
               alt="Picture of the author"
-              width={150}
-              height={150}
+              width={140}
+              height={140}
               className=""
             />
           </div>
