@@ -2,6 +2,15 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono, Ubuntu } from "next/font/google";
 import "./globals.css";
 import localFont from "next/font/local";
+import {
+  Menubar,
+  MenubarContent,
+  MenubarItem,
+  MenubarMenu,
+  MenubarSeparator,
+  MenubarShortcut,
+  MenubarTrigger,
+} from "@/components/ui/menubar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",

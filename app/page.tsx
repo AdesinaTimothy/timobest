@@ -822,7 +822,7 @@ export default function Home() {
           </div>
 
           <div>
-            <p>
+            <p className="text-white">
               I've worked on a diverse range of projects, from mobile
               applications, websites, and web apps to Chrome extensions,
               AI-driven tools, and more.
