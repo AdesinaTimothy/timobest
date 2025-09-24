@@ -5,16 +5,20 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import ProjectCard from "@/components/ui/ProjectCard";
+import Link from "next/link";
+import Footer from "@/components/ui/Footer";
+import { Separator } from "@/components/ui/separator";
 
 export default function Home() {
   return (
-    <div className="bg-black w-full flex items-center justify-center">
+    <div className="bg-black flex flex-col w-full items-center justify-center">
       {/* Header Section  */}
       <div className="w-full h-auto ">
         <section className="w-full h-auto" id="hero">
           <div
             id="hero-div"
-            className="w-full justify-between flex h-auto items-center mb-2 pt-20"
+            className="w-full justify-between flex h-auto items-center mb-2 pt-5"
           >
             <div className="gap-4 w-full">
               <h1 className="text-white text-5xl md:text-8xl font-[700]">
@@ -60,6 +64,15 @@ export default function Home() {
                 with innovation—seeing challenges clinically and creatively to
                 improve lives and shape a better future.
               </p>
+
+              <div className="flex flex-row gap-6">
+                <button className="bg-yellow-500 hover:bg-yellow-600 text-black  py-2 px-6 rounded-md shadow-md transition-colors duration-300">
+                  Reach Out
+                </button>
+                <button className="bg-white hover:bg-yellow-600 text-black  py-2 px-6 rounded-md shadow-md transition-colors duration-300">
+                  Download Resume
+                </button>
+              </div>
             </div>
           </div>
         </section>
@@ -215,7 +228,7 @@ export default function Home() {
           <div>
             <div className="w-full flex flex-col gap-3">
               <h3 className="text-yellow-500 text-4xl md:text-5xl font-[500]">
-                Skills 🛠️
+                Skills 🧰
               </h3>
             </div>
 
@@ -799,7 +812,48 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        {/* PROJECT SECTIONS */}
+        <section id="projects" className="w-full h-auto mt-16">
+          <div className="w-full flex flex-col gap-3">
+            <h3 className="text-yellow-500 text-4xl md:text-5xl font-[500]">
+              Selected Projects 🛠️
+            </h3>
+          </div>
+
+          <div>
+            <p>
+              I've worked on a diverse range of projects, from mobile
+              applications, websites, and web apps to Chrome extensions,
+              AI-driven tools, and more.
+            </p>
+          </div>
+
+          <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-6">
+            <ProjectCard />
+            <ProjectCard />
+            <ProjectCard />
+            <ProjectCard />
+          </div>
+
+          <div>
+            <Link href="/project">
+              <button className="bg-white rounded-md py-2 px-3 mt-5 hover:bg-gray-300">
+                View more Projects
+              </button>
+            </Link>
+          </div>
+        </section>
       </div>
+
+      {/* FOOTER SECTION */}
+      <section
+        id="footer"
+        className="flex flex-col gap-7 w-full mt-10 h-auto py-8"
+      >
+        <Separator />
+        <Footer />
+      </section>
     </div>
   );
 }

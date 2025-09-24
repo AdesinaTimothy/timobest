@@ -1,0 +1,56 @@
+import Footer from "@/components/ui/Footer";
+import ProjectCard from "@/components/ui/ProjectCard";
+import { Separator } from "@/components/ui/separator";
+
+export default function ProjectPage() {
+  return (
+    <div className="bg-black w-full ">
+      <section className="w-full h-auto" id="hero">
+        <div
+          id="hero-div"
+          className="w-full justify-between flex h-auto items-center mb-2 pt-5"
+        >
+          <div className="gap-4 w-full">
+            <h1 className="text-white text-5xl md:text-7xl font-[700]">
+              Welcome to <br></br> to my Project page 🛠️
+            </h1>
+            <h4 className=" text-yellow-500 text-2xl md:text-3xl font-[500] mt-3">
+              Nurse & Design Engineer. 👨‍⚕️
+            </h4>
+            <p className="text-white text-[20px] mt-6">
+              I've built a diverse range of projects, from mobile apps,
+              websites, and web platforms to Chrome extensions, AI-driven tools,
+              and design projects.
+            </p>
+          </div>
+        </div>
+
+        {/* Projects DIV */}
+        <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-6">
+          <ProjectCard />
+          <ProjectCard />
+          <ProjectCard />
+          <ProjectCard />
+          <ProjectCard />
+          <ProjectCard />
+          <ProjectCard />
+          <ProjectCard />
+          <ProjectCard />
+          <ProjectCard />
+          <ProjectCard />
+          <ProjectCard />
+          <ProjectCard />
+          <ProjectCard />
+        </div>
+      </section>
+
+      <section
+        id="footer"
+        className="flex flex-col gap-7 w-full mt-10 h-auto py-8"
+      >
+        <Separator />
+        <Footer />
+      </section>
+    </div>
+  );
+}
