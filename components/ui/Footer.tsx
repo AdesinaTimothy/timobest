@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Footer = () => {
   return (
-    <div className="flex flex-col gap-5 w-full h-auto">
+    <div className=" flex flex-col gap-5 w-full h-auto">
       <h4 className="text-yellow-500 font-semibold text-3xl text-center md:text-start">
         Let's Connect here
       </h4>

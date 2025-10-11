@@ -19,6 +19,7 @@ import {
   NavigationMenuTrigger,
   NavigationMenuViewport,
 } from "@/components/ui/navigation-menu";
+import { FireworksBackground } from "@/components/animate-ui/components/backgrounds/fireworks";
 
 export default function Home() {
   return (
@@ -64,7 +65,8 @@ export default function Home() {
       </section>
 
       <div className="w-full h-auto ">
-        <section className="w-full h-auto" id="hero ">
+        <section className="relative w-full h-auto" id="hero ">
+          <FireworksBackground className="absolute inset-0s" />
           <div
             id="hero-div"
             className="w-full justify-between flex h-auto items-center mt-30 mb-2 pt-5"
@@ -289,12 +291,10 @@ export default function Home() {
               <div className="flex flex-wrap  mt-1 gap-2 max-w-4xl">
                 <div
                   className="flex flex-wrap items-center justify-between gap-3  bg-white rounded-sm px-2 py-1 shadow-sm 
-                hover:bg-yellow-500 hover:shadow-md transition-colors duration-100 cursor-pointer group"
+                 hover:bg-gray-200 hover:shadow-md transition-colors duration-100 cursor-pointer group"
                 >
                   {/* Label */}
-                  <p className="text-gray-900 text-sm font-medium group-hover:text-white">
-                    HTML
-                  </p>
+                  <p className="text-gray-900 text-sm font-medium ">HTML</p>
 
                   {/* Icon */}
                   <div className="flex items-center justify-center w-6 h-6 rounded-full">
@@ -309,12 +309,10 @@ export default function Home() {
                 </div>
                 <div
                   className="flex flex-wrap items-center justify-between gap-3  bg-white rounded-sm px-2 py-1 shadow-sm 
-                hover:bg-yellow-500 hover:shadow-md transition-colors duration-100 cursor-pointer group"
+                 hover:bg-gray-200 hover:shadow-md transition-colors duration-100 cursor-pointer group"
                 >
                   {/* Label */}
-                  <p className="text-gray-900 text-sm font-medium group-hover:text-white">
-                    CSS3
-                  </p>
+                  <p className="text-gray-900 text-sm font-medium ">CSS3</p>
 
                   {/* Icon */}
                   <div className="flex items-center justify-center w-6 h-6 rounded-full">
@@ -329,10 +327,10 @@ export default function Home() {
                 </div>
                 <div
                   className="flex flex-wrap items-center justify-between gap-3  bg-white rounded-sm px-2 py-1 shadow-sm 
-                hover:bg-yellow-500 hover:shadow-md transition-colors duration-100 cursor-pointer group"
+                 hover:bg-gray-200 hover:shadow-md transition-colors duration-100 cursor-pointer group"
                 >
                   {/* Label */}
-                  <p className="text-gray-900 text-sm font-medium group-hover:text-white">
+                  <p className="text-gray-900 text-sm font-medium ">
                     Tailwind CSS
                   </p>
 
@@ -349,10 +347,10 @@ export default function Home() {
                 </div>
                 <div
                   className="flex flex-wrap items-center justify-between gap-3  bg-white rounded-sm px-2 py-1 shadow-sm 
-                hover:bg-yellow-500 hover:shadow-md transition-colors duration-100 cursor-pointer group"
+                 hover:bg-gray-200 hover:shadow-md transition-colors duration-100 cursor-pointer group"
                 >
                   {/* Label */}
-                  <p className="text-gray-900 text-sm font-medium group-hover:text-white">
+                  <p className="text-gray-900 text-sm font-medium ">
                     JavaScript
                   </p>
 
@@ -369,10 +367,10 @@ export default function Home() {
                 </div>
                 <div
                   className="flex flex-wrap items-center justify-between gap-3  bg-white rounded-sm px-2 py-1 shadow-sm 
-                hover:bg-yellow-500 hover:shadow-md transition-colors duration-100 cursor-pointer group"
+                 hover:bg-gray-200 hover:shadow-md transition-colors duration-100 cursor-pointer group"
                 >
                   {/* Label */}
-                  <p className="text-gray-900 text-sm font-medium group-hover:text-white">
+                  <p className="text-gray-900 text-sm font-medium ">
                     TypeScript
                   </p>
 
@@ -389,12 +387,10 @@ export default function Home() {
                 </div>
                 <div
                   className="flex flex-wrap items-center justify-between gap-3  bg-white rounded-sm px-2 py-1 shadow-sm 
-                hover:bg-yellow-500 hover:shadow-md transition-colors duration-100 cursor-pointer group"
+                 hover:bg-gray-200 hover:shadow-md transition-colors duration-100 cursor-pointer group"
                 >
                   {/* Label */}
-                  <p className="text-gray-900 text-sm font-medium group-hover:text-white">
-                    React
-                  </p>
+                  <p className="text-gray-900 text-sm font-medium ">React</p>
 
                   {/* Icon */}
                   <div className="flex items-center justify-center w-6 h-6 rounded-full">
@@ -409,12 +405,10 @@ export default function Home() {
                 </div>
                 <div
                   className="flex flex-wrap items-center justify-between gap-3  bg-white rounded-sm px-2 py-1 shadow-sm 
-                hover:bg-yellow-500 hover:shadow-md transition-colors duration-100 cursor-pointer group"
+                 hover:bg-gray-200 hover:shadow-md transition-colors duration-100 cursor-pointer group"
                 >
                   {/* Label */}
-                  <p className="text-gray-900 text-sm font-medium group-hover:text-white">
-                    NextJs
-                  </p>
+                  <p className="text-gray-900 text-sm font-medium ">NextJs</p>
 
                   {/* Icon */}
                   <div className="flex items-center justify-center w-6 h-6 rounded-full">
@@ -437,12 +431,10 @@ export default function Home() {
               <div className="flex flex-wrap  mt-1 gap-2 max-w-4xl">
                 <div
                   className="flex flex-wrap items-center justify-between gap-3  bg-white rounded-sm px-2 py-1 shadow-sm 
-                hover:bg-yellow-500 hover:shadow-md transition-colors duration-100 cursor-pointer group"
+                hover:bg-gray-200 hover:shadow-md transition-colors duration-100 cursor-pointer group"
                 >
                   {/* Label */}
-                  <p className="text-gray-900 text-sm font-medium group-hover:text-white">
-                    Node.js
-                  </p>
+                  <p className="text-gray-900 text-sm font-medium">Node.js</p>
 
                   {/* Icon */}
                   <div className="flex items-center justify-center w-6 h-6 rounded-full">
@@ -457,12 +449,10 @@ export default function Home() {
                 </div>
                 <div
                   className="flex flex-wrap items-center justify-between gap-3  bg-white rounded-sm px-2 py-1 shadow-sm 
-                hover:bg-yellow-500 hover:shadow-md transition-colors duration-100 cursor-pointer group"
+                hover:bg-gray-200 hover:shadow-md transition-colors duration-100 cursor-pointer group"
                 >
                   {/* Label */}
-                  <p className="text-gray-900 text-sm font-medium group-hover:text-white">
-                    Express
-                  </p>
+                  <p className="text-gray-900 text-sm font-medium ">Express</p>
 
                   {/* Icon */}
                   <div className="flex items-center justify-center w-6 h-6 rounded-full">
@@ -477,10 +467,10 @@ export default function Home() {
                 </div>
                 <div
                   className="flex flex-wrap items-center justify-between gap-3  bg-white rounded-sm px-2 py-1 shadow-sm 
-                hover:bg-yellow-500 hover:shadow-md transition-colors duration-100 cursor-pointer group"
+                 hover:bg-gray-200 hover:shadow-md transition-colors duration-100 cursor-pointer group"
                 >
                   {/* Label */}
-                  <p className="text-gray-900 text-sm font-medium group-hover:text-white">
+                  <p className="text-gray-900 text-sm font-medium ">
                     Rest APIs
                   </p>
 
@@ -497,12 +487,10 @@ export default function Home() {
                 </div>
                 <div
                   className="flex flex-wrap items-center justify-between gap-3  bg-white rounded-sm px-2 py-1 shadow-sm 
-                hover:bg-yellow-500 hover:shadow-md transition-colors duration-100 cursor-pointer group"
+                 hover:bg-gray-200 hover:shadow-md transition-colors duration-100 cursor-pointer group"
                 >
                   {/* Label */}
-                  <p className="text-gray-900 text-sm font-medium group-hover:text-white">
-                    GraphQl
-                  </p>
+                  <p className="text-gray-900 text-sm font-medium ">GraphQl</p>
 
                   {/* Icon */}
                   <div className="flex items-center justify-center w-6 h-6 rounded-full">
@@ -517,12 +505,10 @@ export default function Home() {
                 </div>
                 <div
                   className="flex flex-wrap items-center justify-between gap-3  bg-white rounded-sm px-2 py-1 shadow-sm 
-                hover:bg-yellow-500 hover:shadow-md transition-colors duration-100 cursor-pointer group"
+                 hover:bg-gray-200 hover:shadow-md transition-colors duration-100 cursor-pointer group"
                 >
                   {/* Label */}
-                  <p className="text-gray-900 text-sm font-medium group-hover:text-white">
-                    MongoDB
-                  </p>
+                  <p className="text-gray-900 text-sm font-medium ">MongoDB</p>
 
                   {/* Icon */}
                   <div className="flex items-center justify-center w-6 h-6 rounded-full">
@@ -537,10 +523,10 @@ export default function Home() {
                 </div>
                 <div
                   className="flex flex-wrap items-center justify-between gap-3  bg-white rounded-sm px-2 py-1 shadow-sm 
-                hover:bg-yellow-500 hover:shadow-md transition-colors duration-100 cursor-pointer group"
+                 hover:bg-gray-200 hover:shadow-md transition-colors duration-100 cursor-pointer group"
                 >
                   {/* Label */}
-                  <p className="text-gray-900 text-sm font-medium group-hover:text-white">
+                  <p className="text-gray-900 text-sm font-medium ">
                     PostgresSQL
                   </p>
 
@@ -557,12 +543,10 @@ export default function Home() {
                 </div>
                 <div
                   className="flex flex-wrap items-center justify-between gap-3  bg-white rounded-sm px-2 py-1 shadow-sm 
-                hover:bg-yellow-500 hover:shadow-md transition-colors duration-100 cursor-pointer group"
+                 hover:bg-gray-200 hover:shadow-md transition-colors duration-100 cursor-pointer group"
                 >
                   {/* Label */}
-                  <p className="text-gray-900 text-sm font-medium group-hover:text-white">
-                    Clerk
-                  </p>
+                  <p className="text-gray-900 text-sm font-medium ">Clerk</p>
 
                   {/* Icon */}
                   <div className="flex items-center justify-center w-6 h-6 rounded-full">
@@ -577,12 +561,10 @@ export default function Home() {
                 </div>
                 <div
                   className="flex flex-wrap items-center justify-between gap-3  bg-white rounded-sm px-2 py-1 shadow-sm 
-                hover:bg-yellow-500 hover:shadow-md transition-colors duration-100 cursor-pointer group"
+                 hover:bg-gray-200 hover:shadow-md transition-colors duration-100 cursor-pointer group"
                 >
                   {/* Label */}
-                  <p className="text-gray-900 text-sm font-medium group-hover:text-white">
-                    SupaBase
-                  </p>
+                  <p className="text-gray-900 text-sm font-medium ">SupaBase</p>
 
                   {/* Icon */}
                   <div className="flex items-center justify-center w-6 h-6 rounded-full">
@@ -605,10 +587,10 @@ export default function Home() {
               <div className="flex flex-wrap  mt-2 gap-2 max-w-4xl">
                 <div
                   className="flex flex-wrap items-center justify-between gap-3  bg-white rounded-sm px-2 py-1 shadow-sm 
-                hover:bg-yellow-500 hover:shadow-md transition-colors duration-100 cursor-pointer group"
+                 hover:bg-gray-200 hover:shadow-md transition-colors duration-100 cursor-pointer group"
                 >
                   {/* Label */}
-                  <p className="text-gray-900 text-sm font-medium group-hover:text-white">
+                  <p className="text-gray-900 text-sm font-medium ">
                     React Native
                   </p>
 
@@ -625,12 +607,10 @@ export default function Home() {
                 </div>
                 <div
                   className="flex flex-wrap items-center justify-between gap-3  bg-white rounded-sm px-2 py-1 shadow-sm 
-                hover:bg-yellow-500 hover:shadow-md transition-colors duration-100 cursor-pointer group"
+                 hover:bg-gray-200 hover:shadow-md transition-colors duration-100 cursor-pointer group"
                 >
                   {/* Label */}
-                  <p className="text-gray-900 text-sm font-medium group-hover:text-white">
-                    Expo
-                  </p>
+                  <p className="text-gray-900 text-sm font-medium ">Expo</p>
 
                   {/* Icon */}
                   <div className="flex items-center justify-center w-6 h-6 rounded-full">
@@ -645,12 +625,10 @@ export default function Home() {
                 </div>
                 <div
                   className="flex flex-wrap items-center justify-between gap-3  bg-white rounded-sm px-2 py-1 shadow-sm 
-                hover:bg-yellow-500 hover:shadow-md transition-colors duration-100 cursor-pointer group"
+                 hover:bg-gray-200 hover:shadow-md transition-colors duration-100 cursor-pointer group"
                 >
                   {/* Label */}
-                  <p className="text-gray-900 text-sm font-medium group-hover:text-white">
-                    SQLite
-                  </p>
+                  <p className="text-gray-900 text-sm font-medium ">SQLite</p>
 
                   {/* Icon */}
                   <div className="flex items-center justify-center w-6 h-6 rounded-full">
@@ -665,12 +643,10 @@ export default function Home() {
                 </div>
                 <div
                   className="flex flex-wrap items-center justify-between gap-3  bg-white rounded-sm px-2 py-1 shadow-sm 
-                hover:bg-yellow-500 hover:shadow-md transition-colors duration-100 cursor-pointer group"
+                h hover:bg-gray-200 hover:shadow-md transition-colors duration-100 cursor-pointer group"
                 >
                   {/* Label */}
-                  <p className="text-gray-900 text-sm font-medium group-hover:text-white">
-                    MMKV
-                  </p>
+                  <p className="text-gray-900 text-sm font-medium ">MMKV</p>
 
                   {/* Icon */}
                   <div className="flex items-center justify-center w-6 h-6 rounded-full">
@@ -685,10 +661,10 @@ export default function Home() {
                 </div>
                 <div
                   className="flex flex-wrap items-center justify-between gap-3  bg-white rounded-sm px-2 py-1 shadow-sm 
-                hover:bg-yellow-500 hover:shadow-md transition-colors duration-100 cursor-pointer group"
+                 hover:bg-gray-200 hover:shadow-md transition-colors duration-100 cursor-pointer group"
                 >
                   {/* Label */}
-                  <p className="text-gray-900 text-sm font-medium group-hover:text-white">
+                  <p className="text-gray-900 text-sm font-medium ">
                     NativeWind
                   </p>
 
@@ -705,10 +681,10 @@ export default function Home() {
                 </div>
                 <div
                   className="flex flex-wrap items-center justify-between gap-3  bg-white rounded-sm px-2 py-1 shadow-sm 
-                hover:bg-yellow-500 hover:shadow-md transition-colors duration-100 cursor-pointer group"
+                 hover:bg-gray-200 hover:shadow-md transition-colors duration-100 cursor-pointer group"
                 >
                   {/* Label */}
-                  <p className="text-gray-900 text-sm font-medium group-hover:text-white">
+                  <p className="text-gray-900 text-sm font-medium ">
                     Reanimated
                   </p>
 
@@ -733,12 +709,10 @@ export default function Home() {
               <div className="flex flex-wrap  mt-2 gap-2 max-w-4xl">
                 <div
                   className="flex flex-wrap items-center justify-between gap-3  bg-white rounded-sm px-2 py-1 shadow-sm 
-                hover:bg-yellow-500 hover:shadow-md transition-colors duration-100 cursor-pointer group"
+                 hover:bg-gray-200 hover:shadow-md transition-colors duration-100 cursor-pointer group"
                 >
                   {/* Label */}
-                  <p className="text-gray-900 text-sm font-medium group-hover:text-white">
-                    Figma
-                  </p>
+                  <p className="text-gray-900 text-sm font-medium ">Figma</p>
 
                   {/* Icon */}
                   <div className="flex items-center justify-center w-6 h-6 rounded-full">
@@ -753,10 +727,10 @@ export default function Home() {
                 </div>
                 <div
                   className="flex flex-wrap items-center justify-between gap-3  bg-white rounded-sm px-2 py-1 shadow-sm 
-                hover:bg-yellow-500 hover:shadow-md transition-colors duration-100 cursor-pointer group"
+                 hover:bg-gray-200 hover:shadow-md transition-colors duration-100 cursor-pointer group"
                 >
                   {/* Label */}
-                  <p className="text-gray-900 text-sm font-medium group-hover:text-white">
+                  <p className="text-gray-900 text-sm font-medium ">
                     Illustrator
                   </p>
 
@@ -773,10 +747,10 @@ export default function Home() {
                 </div>
                 <div
                   className="flex flex-wrap items-center justify-between gap-3  bg-white rounded-sm px-2 py-1 shadow-sm 
-                hover:bg-yellow-500 hover:shadow-md transition-colors duration-100 cursor-pointer group"
+                 hover:bg-gray-200 hover:shadow-md transition-colors duration-100 cursor-pointer group"
                 >
                   {/* Label */}
-                  <p className="text-gray-900 text-sm font-medium group-hover:text-white">
+                  <p className="text-gray-900 text-sm font-medium ">
                     Photoshop
                   </p>
 
@@ -801,12 +775,10 @@ export default function Home() {
               <div className="flex flex-wrap  mt-2 gap-2 max-w-4xl">
                 <div
                   className="flex flex-wrap items-center justify-between gap-3  bg-white rounded-sm px-2 py-1 shadow-sm 
-                hover:bg-yellow-500 hover:shadow-md transition-colors duration-100 cursor-pointer group"
+                 hover:bg-gray-200 hover:shadow-md transition-colors duration-100 cursor-pointer group"
                 >
                   {/* Label */}
-                  <p className="text-gray-900 text-sm font-medium group-hover:text-white">
-                    Zustand
-                  </p>
+                  <p className="text-gray-900 text-sm font-medium ">Zustand</p>
 
                   {/* Icon */}
                   <div className="flex items-center justify-center w-6 h-6 rounded-full">
@@ -821,10 +793,10 @@ export default function Home() {
                 </div>
                 <div
                   className="flex flex-wrap items-center justify-between gap-3  bg-white rounded-sm px-2 py-1 shadow-sm 
-                hover:bg-yellow-500 hover:shadow-md transition-colors duration-100 cursor-pointer group"
+                 hover:bg-gray-200 hover:shadow-md transition-colors duration-100 cursor-pointer group"
                 >
                   {/* Label */}
-                  <p className="text-gray-900 text-sm font-medium group-hover:text-white">
+                  <p className="text-gray-900 text-sm font-medium ">
                     React-Toastify
                   </p>
 
@@ -841,10 +813,10 @@ export default function Home() {
                 </div>
                 <div
                   className="flex flex-wrap items-center justify-between gap-3  bg-white rounded-sm px-2 py-1 shadow-sm 
-                hover:bg-yellow-500 hover:shadow-md transition-colors duration-100 cursor-pointer group"
+                 hover:bg-gray-200 hover:shadow-md transition-colors duration-100 cursor-pointer group"
                 >
                   {/* Label */}
-                  <p className="text-gray-900 text-sm font-medium group-hover:text-white">
+                  <p className="text-gray-900 text-sm font-medium ">
                     Shadcn UI
                   </p>
 

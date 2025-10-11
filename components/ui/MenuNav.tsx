@@ -13,7 +13,7 @@ import {
 
 const MenuNav = () => {
   return (
-    <div>
+    <div className="">
       <section
         id="menu"
         className="sticky top-2 z-50 w-full h-auto flex flex-row items-center rounded-md justify-between bg-transparent backdrop-blur-md px-5"

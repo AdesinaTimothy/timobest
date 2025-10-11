@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -11,10 +12,11 @@ import {
   NavigationMenuTrigger,
   NavigationMenuViewport,
 } from "@/components/ui/navigation-menu";
+import { HoleBackground } from "@/components/animate-ui/components/backgrounds/hole";
 
 const page = () => {
   return (
-    <div className="w-full h-auto flex flex-col">
+    <div className=" w-full h-auto flex flex-col">
       <section
         id="menu"
         className="sticky top-2 z-50 w-full h-auto flex flex-row items-center rounded-md justify-between bg-transparent backdrop-blur-md px-5"
