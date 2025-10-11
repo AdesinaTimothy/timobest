@@ -130,7 +130,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="mt-6 py-6" id="work-experience">
+        <section className=" mt-6 py-6" id="work-experience">
           <div className="w-full flex flex-col gap-3">
             <h3 className="text-yellow-500 text-4xl md:text-5xl font-[500]">
               Work Experience 💪
