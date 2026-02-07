@@ -856,7 +856,7 @@ export default function Home() {
             <ProjectCard
               image="/images/qrcodes.webp"
               title="RenalPal"
-              description="A comprehensive mobile companion app for dialysis patients to track fluid intake, manage medications with smart reminders, learn and monitor their kidney health journey."
+              description="A comprehensive mobile companion app for dialysis patients to track fluid intake, manage medications with smart reminders, and monitor their kidney health journey."
               tools={[
                 "React Native",
                 "TypeScript",
@@ -871,7 +871,7 @@ export default function Home() {
             <ProjectCard
               image="/images/qrcodes.webp"
               title="QR Code Generator"
-              description="A web app that converts YouTube URLs into downloadable QR codes for easy video sharing and offline access."
+              description="A web app that converts YouTube URLs into downloadable QR codes."
               tools={[
                 "Next.js",
                 "Express",
@@ -880,20 +880,13 @@ export default function Home() {
                 "Node js",
                 "Toastify",
               ]}
-              liveLink="https://qr-code-beryl-alpha.vercel.app/"
+              liveLink="https://www.renalpal.com/"
             />
             <ProjectCard
               image="/images/qrcodes.webp"
               title="QR Code Generator"
-              description="A web app that converts YouTube URLs into downloadable QR codes for easy video sharing and offline access."
-              tools={[
-                "Next.js",
-                "Express",
-                "Railway",
-                "TailwindCSS",
-                "Node js",
-                "Toastify",
-              ]}
+              description="A web app that converts YouTube URLs into downloadable QR codes."
+              tools={["Next.js", "Express", "Railway", "TailwindCSS"]}
               liveLink="https://qr-code-beryl-alpha.vercel.app/"
             />
             <ProjectCard
