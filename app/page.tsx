@@ -880,7 +880,7 @@ export default function Home() {
                 "Node js",
                 "Toastify",
               ]}
-              liveLink="https://www.renalpal.com/"
+              liveLink="https://qr-code-beryl-alpha.vercel.app/"
             />
             <ProjectCard
               image="/images/qrcodes.webp"
