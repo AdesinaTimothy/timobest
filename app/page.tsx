@@ -853,10 +853,49 @@ export default function Home() {
           </div>
 
           <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-6">
-            <ProjectCard />
-            <ProjectCard />
-            <ProjectCard />
-            <ProjectCard />
+            <ProjectCard
+              image="/images/qrcodes.webp"
+              title="RenalPal"
+              description="A comprehensive mobile companion app for dialysis patients to track fluid intake, manage medications with smart reminders, learn and monitor their kidney health journey."
+              tools={[
+                "React Native",
+                "TypeScript",
+                "Expo",
+                "Expo EAS Build",
+                "Supabase",
+                "NativeWind",
+                "Zustand",
+              ]}
+              liveLink="https://www.renalpal.com/"
+            />
+            <ProjectCard
+              image="/images/qrcodes.webp"
+              title="QR Code Generator"
+              description="A web app that converts YouTube URLs into downloadable QR codes."
+              tools={[
+                "Next.js",
+                "Express",
+                "Railway",
+                "TailwindCSS",
+                "Node js",
+                "Toastify",
+              ]}
+              liveLink="https://www.renalpal.com/"
+            />
+            <ProjectCard
+              image="/images/qrcodes.webp"
+              title="QR Code Generator"
+              description="A web app that converts YouTube URLs into downloadable QR codes."
+              tools={["Next.js", "Express", "Railway", "TailwindCSS"]}
+              liveLink="https://qr-code-beryl-alpha.vercel.app/"
+            />
+            <ProjectCard
+              image="/images/qrcodes.webp"
+              title="QR Code Generator"
+              description="A web app that converts YouTube URLs into downloadable QR codes."
+              tools={["Next.js", "Express", "Railway", "TailwindCSS"]}
+              liveLink="https://qr-code-beryl-alpha.vercel.app/"
+            />
           </div>
 
           <div>
