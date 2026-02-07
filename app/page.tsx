@@ -890,11 +890,17 @@ export default function Home() {
               liveLink="https://qr-code-beryl-alpha.vercel.app/"
             />
             <ProjectCard
-              image="/images/qrcodes.webp"
-              title="QR Code Generator"
-              description="A web app that converts YouTube URLs into downloadable QR codes."
-              tools={["Next.js", "Express", "Railway", "TailwindCSS"]}
-              liveLink="https://qr-code-beryl-alpha.vercel.app/"
+              image="/images/restcountries.webp" // replace with your actual screenshot image path
+              title="RestCountries App"
+              description="A React web app that displays countries with search and region filter functionality, using the RestCountries API."
+              tools={[
+                "React",
+                "Vite",
+                "React Router",
+                "TailwindCSS",
+                "REST API",
+              ]}
+              liveLink="https://endearing-concha-d9616c.netlify.app/"
             />
           </div>
 
