@@ -886,7 +886,14 @@ export default function Home() {
               image="/images/qrcodes.webp"
               title="QR Code Generator"
               description="A web app that converts YouTube URLs into downloadable QR codes."
-              tools={["Next.js", "Express", "Railway", "TailwindCSS"]}
+              tools={[
+                "Next.js",
+                "Express",
+                "Railway",
+                "TailwindCSS",
+                "Node js",
+                "Toastify",
+              ]}
               liveLink="https://qr-code-beryl-alpha.vercel.app/"
             />
             <ProjectCard
