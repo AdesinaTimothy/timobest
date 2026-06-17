@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 interface ProjectCardProps {
@@ -7,6 +8,7 @@ interface ProjectCardProps {
   description: string;
   tools?: string[];
   liveLink?: string;
+  slug?: string;
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({
@@ -15,11 +17,12 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   description,
   tools = [],
   liveLink,
+  slug,
 }) => {
-  return (
-    <div className="w-full max-w-md bg-black rounded-lg border border-gray-700 shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+  const cardContent = (
+    <div className="w-full bg-black rounded-lg border border-gray-700 shadow-md overflow-hidden hover:shadow-lg hover:border-yellow-500/30 transition-all duration-300 cursor-pointer flex flex-col h-full">
       {/* Image Section */}
-      <div className="relative h-48 bg-black">
+      <div className="relative h-48 bg-black flex-shrink-0">
         <Image
           src={image}
           alt={title}
@@ -31,9 +34,9 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
       </div>
 
       {/* Text Section */}
-      <div className="p-4">
+      <div className="p-4 flex flex-col flex-1">
         {/* Title */}
-        <h3 className="text-xl font-bold text-white mb-2 line-clamp-2">
+        <h3 className="text-xl font-bold text-white mb-2 line-clamp-1">
           {title}
         </h3>
 
@@ -56,22 +59,34 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           </div>
         )}
 
-        {/* Live Button */}
-        {liveLink && (
-          <div className="flex gap-2 pt-2">
+        {/* Buttons — pushed to bottom */}
+        <div className="flex gap-2 pt-2 mt-auto">
+          {slug && (
+            <span className="flex-1 bg-yellow-500 text-black text-sm font-medium py-2 px-4 rounded-md flex items-center justify-center hover:bg-yellow-400 transition-colors duration-200">
+              View Details
+            </span>
+          )}
+          {liveLink && !slug && (
             <a
               href={liveLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full bg-yellow-500 text-black text-sm font-medium py-2 px-4 rounded-md flex items-center justify-center hover:bg-yellow-400 transition-colors duration-200"
+              onClick={(e) => e.stopPropagation()}
+              className="flex-1 bg-yellow-500 text-black text-sm font-medium py-2 px-4 rounded-md flex items-center justify-center hover:bg-yellow-400 transition-colors duration-200"
             >
               View Live
             </a>
-          </div>
-        )}
+          )}
+        </div>
       </div>
     </div>
   );
+
+  if (slug) {
+    return <Link href={`/project/${slug}`}>{cardContent}</Link>;
+  }
+
+  return cardContent;
 };
 
 export default ProjectCard;

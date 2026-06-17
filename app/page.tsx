@@ -854,14 +854,14 @@ export default function Home() {
 
           <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-6">
             <ProjectCard
-              image="/images/qrcodes.webp"
+              slug="renalpal"
+              image="/images/renalpal.png"
               title="RenalPal"
               description="A comprehensive mobile companion app for dialysis patients to track fluid intake, manage medications with smart reminders, and monitor their kidney health journey."
               tools={[
                 "React Native",
                 "TypeScript",
                 "Expo",
-                "Expo EAS Build",
                 "Supabase",
                 "NativeWind",
                 "Zustand",
@@ -869,35 +869,28 @@ export default function Home() {
               liveLink="https://www.renalpal.com/"
             />
             <ProjectCard
+              slug="youtube-qr-generator"
               image="/images/qrcodes.webp"
-              title="QR Code Generator"
+              title="YouTube QR Generator"
               description="A web app that converts YouTube URLs into downloadable QR codes."
               tools={[
                 "Next.js",
                 "Express",
                 "Railway",
                 "TailwindCSS",
-                "Node js",
-                "Toastify",
               ]}
               liveLink="https://qr-code-beryl-alpha.vercel.app/"
             />
             <ProjectCard
-              image="/images/qrcodes.webp"
-              title="QR Code Generator"
-              description="A web app that converts YouTube URLs into downloadable QR codes."
-              tools={[
-                "Next.js",
-                "Express",
-                "Railway",
-                "TailwindCSS",
-                "Node js",
-                "Toastify",
-              ]}
-              liveLink="https://qr-code-beryl-alpha.vercel.app/"
+              slug="rota-app"
+              image="/images/placeholder.png"
+              title="Rota App"
+              description="A mobile app that connects to the clinic's Excel rota spreadsheet, allowing staff to view shift schedules with push notifications for changes."
+              tools={["React Native", "TypeScript", "Expo", "Google Sheets API"]}
             />
             <ProjectCard
-              image="/images/restcountries.webp" // replace with your actual screenshot image path
+              slug="restcountries"
+              image="/images/restcountries.webp"
               title="RestCountries App"
               description="A React web app that displays countries with search and region filter functionality, using the RestCountries API."
               tools={[
