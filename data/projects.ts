@@ -39,14 +39,13 @@ export const PROJECTS: ProjectData[] = [
       "A comprehensive mobile companion app for dialysis patients to track fluid intake, manage medications with smart reminders, and monitor their kidney health journey.",
     description:
       "RenalPal is designed specifically for dialysis patients and their care teams. It helps patients stay on top of their fluid intake limits, medication schedules, and dialysis appointments. With smart reminders and intuitive tracking, patients can take control of their kidney health journey with confidence.",
-    image: "/images/renalpal.png",
-    heroImage: "/images/renalpal-phone.png",
+    image:  "/images/renapal1.png",
+    heroImage: "/images/renapal1.png",
     screenshots: [
-      "/images/renalpal-screen-1.png",
-      "/images/renalpal-screen-2.png",
-      "/images/renalpal-screen-3.png",
-      "/images/renalpal-screen-4.png",
-      "/images/renalpal-screen-5.png",
+      "/images/renapal1.png",
+      "/images/renapal2.png",
+      "/images/renapal3.png",
+      "/images/renapal4.png",
     ],
     tools: [
       "React Native",
