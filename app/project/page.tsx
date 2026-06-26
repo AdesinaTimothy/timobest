@@ -109,6 +109,13 @@ export default function ProjectPage() {
             tools={["React", "Vite", "React Router", "TailwindCSS", "REST API"]}
             liveLink="https://endearing-concha-d9616c.netlify.app/"
           />
+          <ProjectCard
+            slug="secure-network-design"
+            image="/images/placeholder.png"
+            title="Secure Enterprise Network Design"
+            description="Designed and implemented a secure enterprise network with VLANs, inter-VLAN routing, and ACLs for a financial services company."
+            tools={["Cisco Packet Tracer", "Cisco IOS CLI", "VLANs", "ACLs"]}
+          />
         </div>
       </section>
 

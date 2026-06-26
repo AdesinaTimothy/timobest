@@ -257,6 +257,73 @@ export const PROJECTS: ProjectData[] = [
     ],
     liveLink: "https://endearing-concha-d9616c.netlify.app/",
   },
+
+  {
+    slug: "secure-network-design",
+    title: "Secure Enterprise Network Design",
+    category: "Cybersecurity",
+    platforms: "Cisco Packet Tracer",
+    tagline:
+      "Designed and implemented a secure small enterprise network for a financial services company with VLANs, inter-VLAN routing, and access control lists.",
+    description:
+      "This project was completed as part of the AltSchool Africa Cybersecurity Diploma. I designed a secure branch office network for a mid-sized financial services company expanding across Africa and Europe. The network segments three departments (Admin, Sales, IT Support) using VLANs, implements inter-VLAN routing via Router on a Stick, and enforces access control lists to restrict Sales from accessing Admin resources while giving IT Support full network access.",
+    image: "/images/placeholder.png",
+    screenshots: [],
+    tools: [
+      "Cisco Packet Tracer",
+      "Cisco IOS CLI",
+      "VLANs",
+      "ACLs",
+      "Router on a Stick",
+    ],
+    builtWith: [
+      "Cisco Packet Tracer",
+      "Cisco IOS CLI",
+      "802.1Q Trunking",
+      "VLANs",
+      "Access Control Lists",
+      "Inter-VLAN Routing",
+    ],
+    features: [
+      {
+        emoji: "🔒",
+        title: "Network Segmentation",
+        description:
+          "Three departments isolated using VLANs — Admin (VLAN 10), Sales (VLAN 20), and IT Support (VLAN 30).",
+      },
+      {
+        emoji: "🛡️",
+        title: "Access Control Lists",
+        description:
+          "ACLs restrict Sales from accessing Admin resources while allowing IT Support full network access.",
+      },
+      {
+        emoji: "🔄",
+        title: "Inter-VLAN Routing",
+        description:
+          "Router on a Stick configuration enables controlled communication between VLANs through subinterfaces.",
+      },
+      {
+        emoji: "☁️",
+        title: "Cloud Server Access",
+        description:
+          "Admin department securely connects to a cloud payroll system on a separate network (10.0.0.0/24).",
+      },
+      {
+        emoji: "🏗️",
+        title: "Enterprise Topology",
+        description:
+          "Core router, managed switch, and trunk links designed for a real-world financial services branch office.",
+      },
+      {
+        emoji: "✅",
+        title: "Verified Security",
+        description:
+          "All access rules tested and verified — Sales blocked from Admin, IT Support has full access, Admin reaches cloud server.",
+      },
+    ],
+    liveLink: "https://valiant-death-f4f.notion.site/Secure-Enterprise-Network-Design-AltSchool-Cybersecurity-Project-389ddd21bfaf818d9fc9fa6e3ac10b9b",
+  },
 ];
 
 export function getProjectBySlug(slug: string): ProjectData | undefined {

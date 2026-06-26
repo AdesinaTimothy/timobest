@@ -75,9 +75,17 @@ export default function Home() {
               <h1 className="text-white text-5xl md:text-8xl font-[700]">
                 Hello, <br></br> I'm TimoBest 👋
               </h1>
-              <h4 className=" text-yellow-500 text-2xl md:text-3xl font-[500] mt-3">
-                Nurse & Design Engineer. 👨‍⚕️
-              </h4>
+
+              <div className="flex flex-wrap items-center gap-3 mt-3">
+                <h4 className="text-yellow-500 text-2xl md:text-3xl font-medium">
+                  Nurse & Tech Generalist 👨‍⚕️
+                </h4>
+
+                <span className="rounded-full bg-white/10 border border-white px-3 py-2 text-sm text-white">
+                  Design • Code • Security • AI
+                </span>
+              </div>
+
               <p className="text-white text-[20px] mt-6">
                 I'm passionate about designing 🎨, and bringing it to life
                 through code, crafting delightful 🌐 web and 📱 mobile
@@ -105,15 +113,16 @@ export default function Home() {
                 <span className="text-yellow-500">build</span> softwares 👨‍💻
               </h1>
               <p className="text-md md:text-lg text-white leading-relaxed tracking-wide">
-                I bridged healthcare and design engineering, starting as a nurse
-                where I built empathy, recision, and problem-solving skills.
-                Expanding into design engineering, I learned to create solutions
-                with real-world impact. This shift moved me beyond patient care
-                to designing systems, improving experiences, and driving
-                innovations on a broader scale. More than mastering tools, it’s
-                a bout engineering thoughtful solutions that blend compassion
-                with innovation—seeing challenges clinically and creatively to
-                improve lives and shape a better future.
+                I design and build software 👨‍💻 I started in healthcare as a
+                nurse, where I developed empathy, precision, and strong
+                problem-solving skills. That foundation led me into design and
+                engineering, where I learned to create digital solutions with
+                real-world impact using design, code, cybersecurity principles,
+                and AI-driven tools. Now I focus on building systems that
+                improve experiences, bridge healthcare and technology, and solve
+                problems at scale. For me, it’s not just about tools—it’s about
+                engineering thoughtful solutions that combine compassion with
+                innovation.
               </p>
 
               <div className="flex flex-col md:flex-row gap-6">
@@ -580,6 +589,147 @@ export default function Home() {
               </div>
             </div>
 
+            {/* Cyber Security */}
+            <div className="h-auto flex flex-col flex-wrap mt-4">
+              <h3 className="text-white mt-2 text-2xl">Cyber Security</h3>
+
+              <div className="flex flex-wrap  mt-1 gap-2 max-w-4xl">
+                <div
+                  className="flex flex-wrap items-center justify-between gap-3  bg-white rounded-sm px-2 py-1 shadow-sm 
+                hover:bg-gray-200 hover:shadow-md transition-colors duration-100 cursor-pointer group"
+                >
+                  {/* Label */}
+                  <p className="text-gray-900 text-sm font-medium">
+                    Cisco Packet Tracer
+                  </p>
+
+                  {/* Icon */}
+                  <div className="flex items-center justify-center w-6 h-6 rounded-full">
+                    <Image
+                      src="/images/icons/svg/Node.js.svg"
+                      alt="HTML5 Logo"
+                      width={20}
+                      height={20}
+                      className="object-contain"
+                    />
+                  </div>
+                </div>
+                <div
+                  className="flex flex-wrap items-center justify-between gap-3  bg-white rounded-sm px-2 py-1 shadow-sm 
+                hover:bg-gray-200 hover:shadow-md transition-colors duration-100 cursor-pointer group"
+                >
+                  {/* Label */}
+                  <p className="text-gray-900 text-sm font-medium ">
+                    Cisco IOS CLI
+                  </p>
+
+                  {/* Icon */}
+                  <div className="flex items-center justify-center w-6 h-6 rounded-full">
+                    <Image
+                      src="/images/icons/svg/Express.svg"
+                      alt="HTML5 Logo"
+                      width={20}
+                      height={20}
+                      className="object-contain"
+                    />
+                  </div>
+                </div>
+                <div
+                  className="flex flex-wrap items-center justify-between gap-3  bg-white rounded-sm px-2 py-1 shadow-sm 
+                 hover:bg-gray-200 hover:shadow-md transition-colors duration-100 cursor-pointer group"
+                >
+                  {/* Label */}
+                  <p className="text-gray-900 text-sm font-medium ">AWS</p>
+
+                  {/* Icon */}
+                  <div className="flex items-center justify-center w-6 h-6 rounded-full">
+                    <Image
+                      src="/images/icons/svg/Tailwind-CSS.svg"
+                      alt="HTML5 Logo"
+                      width={20}
+                      height={20}
+                      className="object-contain"
+                    />
+                  </div>
+                </div>
+
+                <div
+                  className="flex flex-wrap items-center justify-between gap-3  bg-white rounded-sm px-2 py-1 shadow-sm 
+                 hover:bg-gray-200 hover:shadow-md transition-colors duration-100 cursor-pointer group"
+                >
+                  {/* Label */}
+                  <p className="text-gray-900 text-sm font-medium ">MongoDB</p>
+
+                  {/* Icon */}
+                  <div className="flex items-center justify-center w-6 h-6 rounded-full">
+                    <Image
+                      src="/images/icons/svg/MongoDB.svg"
+                      alt="HTML5 Logo"
+                      width={20}
+                      height={20}
+                      className="object-contain"
+                    />
+                  </div>
+                </div>
+                <div
+                  className="flex flex-wrap items-center justify-between gap-3  bg-white rounded-sm px-2 py-1 shadow-sm 
+                 hover:bg-gray-200 hover:shadow-md transition-colors duration-100 cursor-pointer group"
+                >
+                  {/* Label */}
+                  <p className="text-gray-900 text-sm font-medium ">
+                    PostgresSQL
+                  </p>
+
+                  {/* Icon */}
+                  <div className="flex items-center justify-center w-6 h-6 rounded-full">
+                    <Image
+                      src="/images/icons/svg/PostgresSQL.svg"
+                      alt="HTML5 Logo"
+                      width={20}
+                      height={20}
+                      className="object-contain"
+                    />
+                  </div>
+                </div>
+                <div
+                  className="flex flex-wrap items-center justify-between gap-3  bg-white rounded-sm px-2 py-1 shadow-sm 
+                 hover:bg-gray-200 hover:shadow-md transition-colors duration-100 cursor-pointer group"
+                >
+                  {/* Label */}
+                  <p className="text-gray-900 text-sm font-medium ">Clerk</p>
+
+                  {/* Icon */}
+                  <div className="flex items-center justify-center w-6 h-6 rounded-full">
+                    <Image
+                      src="/images/icons/svg/Clerk.svg"
+                      alt="HTML5 Logo"
+                      width={20}
+                      height={20}
+                      className="object-contain"
+                    />
+                  </div>
+                </div>
+                <div
+                  className="flex flex-wrap items-center justify-between gap-3  bg-white rounded-sm px-2 py-1 shadow-sm 
+                 hover:bg-gray-200 hover:shadow-md transition-colors duration-100 cursor-pointer group"
+                >
+                  {/* Label */}
+                  <p className="text-gray-900 text-sm font-medium ">SupaBase</p>
+
+                  {/* Icon */}
+                  <div className="flex items-center justify-center w-6 h-6 rounded-full">
+                    <Image
+                      src="/images/icons/svg/SupaBase.svg"
+                      alt="HTML5 Logo"
+                      width={20}
+                      height={20}
+                      className="object-contain"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
             {/* Mobile Development */}
             <div className="h-auto flex flex-col flex-wrap mt-4">
               <h3 className="text-white mt-1 text-2xl">Mobile Development</h3>
@@ -873,12 +1023,7 @@ export default function Home() {
               image="/images/qrcodes.webp"
               title="YouTube QR Generator"
               description="A web app that converts YouTube URLs into downloadable QR codes."
-              tools={[
-                "Next.js",
-                "Express",
-                "Railway",
-                "TailwindCSS",
-              ]}
+              tools={["Next.js", "Express", "Railway", "TailwindCSS"]}
               liveLink="https://qr-code-beryl-alpha.vercel.app/"
             />
             <ProjectCard
@@ -886,7 +1031,12 @@ export default function Home() {
               image="/images/placeholder.png"
               title="Rota App"
               description="A mobile app that connects to the clinic's Excel rota spreadsheet, allowing staff to view shift schedules with push notifications for changes."
-              tools={["React Native", "TypeScript", "Expo", "Google Sheets API"]}
+              tools={[
+                "React Native",
+                "TypeScript",
+                "Expo",
+                "Google Sheets API",
+              ]}
             />
             <ProjectCard
               slug="restcountries"
