@@ -28,7 +28,7 @@ export default function Home() {
 
       <section
         id="menu"
-        className="sticky top-2 z-50 w-full h-auto flex flex-row items-center rounded-md justify-between bg-transparent backdrop-blur-md px-5"
+        className="sticky top-2 z-50 w-full h-auto flex flex-row flex-wrap items-center rounded-md justify-center md:justify-between gap-y-1 bg-transparent backdrop-blur-md px-2 md:px-5"
       >
         <div>
           <Link href="/">
@@ -37,24 +37,31 @@ export default function Home() {
         </div>
         <div>
           <NavigationMenu className="">
-            <NavigationMenuList className="gap-3">
+            <NavigationMenuList className="gap-0 md:gap-3">
               <NavigationMenuItem>
                 <Link href="/" passHref>
-                  <p className="px-4 py-2 text-base font-semibold text-yellow-500 rounded-md cursor-pointer transition-all duration-300 hover:bg-yellow-500 hover:text-black">
+                  <p className="px-2 md:px-4 py-2 text-sm md:text-base font-semibold text-yellow-500 rounded-md cursor-pointer transition-all duration-300 hover:bg-yellow-500 hover:text-black">
                     Home
                   </p>
                 </Link>
               </NavigationMenuItem>
               <NavigationMenuItem>
                 <Link href="/project" passHref>
-                  <p className="px-4 py-2 text-base font-semibold text-yellow-500 rounded-md cursor-pointer transition-all duration-300 hover:bg-yellow-500 hover:text-black">
+                  <p className="px-2 md:px-4 py-2 text-sm md:text-base font-semibold text-yellow-500 rounded-md cursor-pointer transition-all duration-300 hover:bg-yellow-500 hover:text-black">
                     Projects
                   </p>
                 </Link>
               </NavigationMenuItem>
               <NavigationMenuItem>
+                <Link href="/security" passHref>
+                  <p className="px-2 md:px-4 py-2 text-sm md:text-base font-semibold text-yellow-500 rounded-md cursor-pointer transition-all duration-300 hover:bg-yellow-500 hover:text-black">
+                    Security
+                  </p>
+                </Link>
+              </NavigationMenuItem>
+              <NavigationMenuItem>
                 <Link href="/about" passHref>
-                  <p className="px-4 py-2 text-base font-semibold text-yellow-500 rounded-md cursor-pointer transition-all duration-300 hover:bg-yellow-500 hover:text-black">
+                  <p className="px-2 md:px-4 py-2 text-sm md:text-base font-semibold text-yellow-500 rounded-md cursor-pointer transition-all duration-300 hover:bg-yellow-500 hover:text-black">
                     About
                   </p>
                 </Link>
@@ -1005,7 +1012,7 @@ export default function Home() {
           <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-6">
             <ProjectCard
               slug="renalpal"
-              image="/images/renalpal.png"
+              image="/images/renalpal-card.png"
               title="RenalPal"
               description="A comprehensive mobile companion app for dialysis patients to track fluid intake, manage medications with smart reminders, and monitor their kidney health journey."
               tools={[

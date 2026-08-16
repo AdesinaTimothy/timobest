@@ -267,7 +267,8 @@ export const PROJECTS: ProjectData[] = [
       "Designed and implemented a secure small enterprise network for a financial services company with VLANs, inter-VLAN routing, and access control lists.",
     description:
       "This project was completed as part of the AltSchool Africa Cybersecurity Diploma. I designed a secure branch office network for a mid-sized financial services company expanding across Africa and Europe. The network segments three departments (Admin, Sales, IT Support) using VLANs, implements inter-VLAN routing via Router on a Stick, and enforces access control lists to restrict Sales from accessing Admin resources while giving IT Support full network access.",
-    image: "/images/placeholder.png",
+    image: "/images/secure-network-design.png",
+    heroImage: "/images/secure-network-design.png",
     screenshots: [],
     tools: [
       "Cisco Packet Tracer",
@@ -323,6 +324,64 @@ export const PROJECTS: ProjectData[] = [
       },
     ],
     liveLink: "https://valiant-death-f4f.notion.site/Secure-Enterprise-Network-Design-AltSchool-Cybersecurity-Project-389ddd21bfaf818d9fc9fa6e3ac10b9b",
+    githubLink: "https://github.com/AdesinaTimothy/secure-network-design",
+  },
+
+  {
+    slug: "port-scanner",
+    title: "Port Scanner",
+    category: "Cybersecurity",
+    platforms: "CLI (Python)",
+    disclaimer:
+      "Educational and authorised security testing only. Only scan systems you own or have explicit written permission to test — unauthorised port scanning may be illegal under laws like the UK Computer Misuse Act 1990.",
+    tagline:
+      "A lightweight port scanner built in Python that identifies open ports and their running services on a target host — the foundation of every security assessment.",
+    description:
+      "Port scanning is the first step in any security audit: before a system can be secured or tested, you need to know which ports are open and what's running behind them. This tool connects to a range of ports on a target machine, reports which ones are open, and identifies the service on each, all from the command line. I built it to move beyond just using tools like Nmap, and to actually understand how they work under the hood — TCP connections at the socket level, the relationship between ports and services, and why reconnaissance tooling is structured the way it is.",
+    image: "/images/port-scanner.png",
+    heroImage: "/images/port-scanner.png",
+    screenshots: [],
+    tools: ["Python", "Sockets", "CLI"],
+    builtWith: ["Python 3", "socket", "datetime"],
+    features: [
+      {
+        emoji: "🎯",
+        title: "Custom Port Range Scanning",
+        description:
+          "Scans a target IP or hostname across any custom port range you specify.",
+      },
+      {
+        emoji: "⚡",
+        title: "Real-Time Detection",
+        description:
+          "Identifies open ports as it scans, with immediate command-line feedback.",
+      },
+      {
+        emoji: "🔎",
+        title: "Service Identification",
+        description:
+          "Detects the service running on each open port — SSH, HTTP, HTTPS, and more.",
+      },
+      {
+        emoji: "⏱️",
+        title: "Scan Timestamps",
+        description:
+          "Displays scan start and finish times so you can track how long a scan took.",
+      },
+      {
+        emoji: "📊",
+        title: "Scan Summary",
+        description:
+          "Reports a clean summary of total open ports found once the scan completes.",
+      },
+      {
+        emoji: "🖥️",
+        title: "Clean CLI Output",
+        description:
+          "Readable, structured terminal output built for clarity over noise.",
+      },
+    ],
+    githubLink: "https://github.com/AdesinaTimothy/port-scanner",
   },
 ];
 
