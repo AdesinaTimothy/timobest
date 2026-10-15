@@ -1026,6 +1026,22 @@ export default function Home() {
               liveLink="https://www.renalpal.com/"
             />
             <ProjectCard
+              slug="our-story"
+              image="/images/our-story-hero.webp"
+              title="Our Story"
+              description="A private online diary for couples: photos, letters, journal entries, places and milestones, written by two people and seen by no one else."
+              tools={[
+                "Next.js",
+                "Node.js",
+                "TypeScript",
+                "Prisma",
+                "PostgreSQL",
+                "TailwindCSS",
+                "Railway",
+              ]}
+              liveLink="https://our-story-production-2af5.up.railway.app"
+            />
+            <ProjectCard
               slug="youtube-qr-generator"
               image="/images/qrcodes.webp"
               title="YouTube QR Generator"
@@ -1034,30 +1050,11 @@ export default function Home() {
               liveLink="https://qr-code-beryl-alpha.vercel.app/"
             />
             <ProjectCard
-              slug="rota-app"
-              image="/images/placeholder.png"
-              title="Rota App"
-              description="A mobile app that connects to the clinic's Excel rota spreadsheet, allowing staff to view shift schedules with push notifications for changes."
-              tools={[
-                "React Native",
-                "TypeScript",
-                "Expo",
-                "Google Sheets API",
-              ]}
-            />
-            <ProjectCard
-              slug="restcountries"
-              image="/images/restcountries.webp"
-              title="RestCountries App"
-              description="A React web app that displays countries with search and region filter functionality, using the RestCountries API."
-              tools={[
-                "React",
-                "Vite",
-                "React Router",
-                "TailwindCSS",
-                "REST API",
-              ]}
-              liveLink="https://endearing-concha-d9616c.netlify.app/"
+              slug="secure-network-design"
+              image="/images/secure-network-design.png"
+              title="Secure Enterprise Network Design"
+              description="Designed and implemented a secure enterprise network with VLANs, inter-VLAN routing, and ACLs for a financial services company."
+              tools={["Cisco Packet Tracer", "Cisco IOS CLI", "VLANs", "ACLs"]}
             />
           </div>
 
