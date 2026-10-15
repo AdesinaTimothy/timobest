@@ -94,6 +94,14 @@ export default function ProjectPage() {
             liveLink="https://www.renalpal.com/"
           />
           <ProjectCard
+            slug="our-story"
+            image="/images/our-story-hero.webp"
+            title="Our Story"
+            description="A private online diary for couples: photos, letters, journal entries, places and milestones, written by two people and seen by no one else."
+            tools={["Next.js", "Node.js", "TypeScript", "Prisma", "PostgreSQL", "TailwindCSS", "Railway"]}
+            liveLink="https://our-story-production-2af5.up.railway.app"
+          />
+          <ProjectCard
             slug="youtube-qr-generator"
             image="/images/qrcodes.webp"
             title="YouTube QR Generator"
@@ -129,6 +137,13 @@ export default function ProjectPage() {
             title="Port Scanner"
             description="A lightweight Python port scanner that identifies open ports and their running services on a target host — the foundation of every security assessment."
             tools={["Python", "Sockets", "CLI"]}
+          />
+          <ProjectCard
+            slug="aws-security-killswitch"
+            image="/images/placeholder.png"
+            title="AWS Active-Defence Kill-Switch"
+            description="An AWS system that detects honeytoken access in near real-time and automatically revokes the attacker's IAM permissions."
+            tools={["AWS CloudTrail", "Amazon CloudWatch", "EventBridge", "AWS Lambda", "IAM"]}
           />
         </div>
       </section>

@@ -383,6 +383,156 @@ export const PROJECTS: ProjectData[] = [
     ],
     githubLink: "https://github.com/AdesinaTimothy/port-scanner",
   },
+
+  {
+    slug: "aws-security-killswitch",
+    title: "AWS Active-Defence Kill-Switch",
+    category: "Cybersecurity",
+    platforms: "AWS (Cloud)",
+    disclaimer:
+      "Built and tested in a personal AWS lab account. All account IDs, IP addresses, and access keys shown in screenshots have been redacted — the secret used is a decoy (honeytoken) with dummy values.",
+    tagline:
+      "An AWS system that detects access to a honeytoken secret in near real-time and automatically revokes the attacker's IAM permissions — turning passive monitoring into active defence.",
+    description:
+      "This project stores a secret that no legitimate system ever reads, then treats any access to it as an attack: alert instantly, and automatically lock the attacker out. Built entirely with native AWS services (CloudTrail, CloudWatch, EventBridge, SNS, Lambda, Secrets Manager, IAM), it runs two detection pipelines in parallel so they can be compared head-to-head — a CloudWatch metric-filter/alarm path and an EventBridge event-driven path. EventBridge proved roughly 3 minutes faster and carried the attacker's identity and source IP, so it's the one wired to the kill-switch: a Lambda function that detaches the attacker's IAM policy the moment they touch the honeytoken. The kill-switch itself is defence-in-depth — an in-code allow-list and a resource-scoped IAM policy mean it can only ever act on the designated victim user, never be turned against its own operator.",
+    image: "/images/placeholder.png",
+    screenshots: [],
+    tools: [
+      "AWS CloudTrail",
+      "Amazon CloudWatch",
+      "Amazon EventBridge",
+      "AWS Lambda",
+      "AWS IAM",
+      "AWS Secrets Manager",
+    ],
+    builtWith: [
+      "AWS CloudTrail",
+      "Amazon CloudWatch (Logs, Metric Filters, Alarms)",
+      "Amazon EventBridge",
+      "Amazon SNS",
+      "AWS Lambda (Python)",
+      "AWS Secrets Manager",
+      "AWS IAM",
+      "Amazon S3",
+      "AWS CLI",
+    ],
+    features: [
+      {
+        emoji: "🍯",
+        title: "Honeytoken Detection",
+        description:
+          "A decoy secret in Secrets Manager that no legitimate system ever reads — any access is by definition an attack.",
+      },
+      {
+        emoji: "🔀",
+        title: "Dual Detection Pipelines",
+        description:
+          "CloudWatch metric-filter/alarm and EventBridge run in parallel, benchmarked head-to-head for speed and signal quality.",
+      },
+      {
+        emoji: "⚡",
+        title: "Automated Kill-Switch",
+        description:
+          "A Lambda function detaches the attacker's IAM policy the instant they touch the honeytoken — their next command is denied.",
+      },
+      {
+        emoji: "🛡️",
+        title: "Defence-in-Depth Safety",
+        description:
+          "An in-code allow-list plus a resource-scoped IAM policy ensure the kill-switch can only ever act on the designated victim.",
+      },
+      {
+        emoji: "📧",
+        title: "Real-Time Alerting",
+        description:
+          "SNS email alerts on both detection paths, with the EventBridge alert carrying the attacker's identity and source IP.",
+      },
+      {
+        emoji: "✅",
+        title: "Verified with Live Proof",
+        description:
+          "Before/after AWS CLI tests confirm the attacker's second attempt is denied immediately after the kill-switch fires.",
+      },
+    ],
+    githubLink:
+      "https://github.com/AdesinaTimothy/aws-security-monitoring-killswitch",
+  },
+  {
+    slug: "our-story",
+    title: "Our Story",
+    category: "Web App",
+    platforms: "Web",
+    tagline:
+      "A private online diary for couples: photos, letters, journal entries, places and milestones, written by two people and seen by no one else.",
+    description:
+      "Our Story gives each couple their own locked diary. Two accounts share one space where they keep their photos in an album that opens like a book, write letters (including ones sealed until a future date), keep a shared journal, pin places on a map and build a timeline of their relationship. Any couple can sign up: one partner starts the diary and invites the other with a one-time link. Under the hood it is a full-stack Next.js app with a layered, modular backend (controllers, services, repositories, validation and shared core infrastructure), where every database query is scoped to the couple so one diary can never read another. It ships with an animated landing page, light and dark themes, email verification and password reset, rate-limited sign-in, file uploads to local disk or S3, and is covered by integration and end-to-end tests.",
+    image: "/images/our-story-hero.webp",
+    heroImage: "/images/our-story-hero.webp",
+    screenshots: [
+      "/images/our-story-hero.webp",
+      "/images/our-story-privacy.webp",
+      "/images/our-story-home.webp",
+      "/images/our-story-timeline.webp",
+      "/images/our-story-memories.webp",
+      "/images/our-story-letters.webp",
+      "/images/our-story-journal.webp",
+      "/images/our-story-start.webp",
+    ],
+    tools: ["Next.js", "Node.js", "TypeScript", "Prisma", "PostgreSQL", "TailwindCSS", "Railway"],
+    builtWith: [
+      "Next.js 16 (App Router, Server Actions)",
+      "Node.js",
+      "React 19",
+      "TypeScript",
+      "Prisma 7",
+      "PostgreSQL",
+      "TailwindCSS",
+      "Framer Motion",
+      "Zod",
+      "Vitest",
+      "Playwright",
+      "Railway",
+    ],
+    features: [
+      {
+        emoji: "🔒",
+        title: "Private by Design",
+        description:
+          "Each diary holds exactly two accounts. Every query is scoped to the couple, and photos are only served to the two of you once signed in.",
+      },
+      {
+        emoji: "📖",
+        title: "Photo Album Book",
+        description:
+          "Photos are bound into a book you page through, with album and grid views, favourites and filters by year.",
+      },
+      {
+        emoji: "💌",
+        title: "Letters & Time Capsules",
+        description:
+          "Write letters to each other, keep drafts, or seal one so it only opens on a date that matters.",
+      },
+      {
+        emoji: "🗺️",
+        title: "Timeline, Memories & Places",
+        description:
+          "A milestone timeline, a memory vault and a map of every place you've been together.",
+      },
+      {
+        emoji: "✨",
+        title: "Animated Landing Page",
+        description:
+          "Draggable polaroids, a live 'together for' counter and scroll-driven chapters, with reduced-motion support.",
+      },
+      {
+        emoji: "🏗️",
+        title: "Layered Architecture",
+        description:
+          "Controllers, services, repositories and validation per feature module, with lint rules that keep the layers apart and tests that cover the journeys.",
+      },
+    ],
+    liveLink: "https://our-story-production-2af5.up.railway.app",
+  },
 ];
 
 export function getProjectBySlug(slug: string): ProjectData | undefined {
